@@ -1,0 +1,165 @@
+﻿key,role,champion_id,in_lane,in_lane_text,win_rate
+JungleRammus,Jungle,Rammus,28.34666667,Danger Early Game,53.69333333
+JungleIvern,Jungle,Ivern,31.875,Danger Early Game,54.4625
+JungleGragas,Jungle,Gragas,32.34,Danger Early Game,49.31
+TopShen,Top,Shen,33.88181818,Danger Early Game,50.93333333
+TopKayle,Top,Kayle,36.49166667,Danger Early Game,50.3875
+JungleZac,Jungle,Zac,36.81153846,Danger Early Game,53.22307692
+JungleElise,Jungle,Elise,36.86470588,Danger Early Game,48.15294118
+SupportAlistar,Support,Alistar,37.4,Danger Early Game,48.92857143
+TopYone,Top,Yone,37.84666667,Danger Early Game,50.55333333
+SupportTaric,Support,Taric,38.2875,Danger Early Game,48.4375
+JungleNunu_&_Willump,Jungle,Nunu & Willump,38.83333333,Danger Early Game,51.68333333
+MiddleGalio,Middle,Galio,39.24,Danger Early Game,48.09
+JungleSejuani,Jungle,Sejuani,39.32142857,Danger Early Game,45.42142857
+TopMalphite,Top,Malphite,39.68888889,Danger Early Game,50.77037037
+JunglePoppy,Jungle,Poppy,39.81666667,Danger Early Game,48.76666667
+MiddleAnnie,Middle,Annie,40.20769231,Bad Early Game,53.38461538
+JungleVolibear,Jungle,Volibear,41.29,Bad Early Game,50.36
+SupportSoraka,Support,Soraka,41.78461538,Bad Early Game,49.62692308
+JungleVi,Jungle,Vi,41.915,Bad Early Game,52.185
+JungleAmumu,Jungle,Amumu,42.38333333,Bad Early Game,52.59666667
+SupportRakan,Support,Rakan,42.41785714,Bad Early Game,49.33928571
+TopJayce,Top,Jayce,43.172,Bad Early Game,48.528
+SupportBraum,Support,Braum,43.24074074,Bad Early Game,51.58518519
+TopTrundle,Top,Trundle,43.31176471,Bad Early Game,51.81764706
+JungleSkarner,Jungle,Skarner,43.4,Bad Early Game,44.53333333
+SupportMaokai,Support,Maokai,43.46470588,Bad Early Game,51.01176471
+MiddleKatarina,Middle,Katarina,43.88285714,Bad Early Game,50.28285714
+SupportRell,Support,Rell,43.93333333,Bad Early Game,52.45555556
+SupportLeona,Support,Leona,43.95862069,Bad Early Game,48.68275862
+TopNasus,Top,Nasus,44.00909091,Bad Early Game,48.08484848
+JungleTrundle,Jungle,Trundle,44.22903226,Bad Early Game,49.81935484
+SupportJanna,Support,Janna,44.372,Bad Early Game,51.112
+ADCJinx,ADC,Jinx,44.57894737,Bad Early Game,49.58947368
+ADCVayne,ADC,Vayne,44.62,Bad Early Game,51.7
+MiddleLux,Middle,Lux,45.13030303,Bad Early Game,50.64848485
+SupportThresh,Support,Thresh,45.16666667,Bad Early Game,49.08148148
+TopOrnn,Top,Ornn,45.38148148,Bad Early Game,52.79259259
+TopKennen,Top,Kennen,45.46315789,Bad Early Game,49.17894737
+MiddleTwisted_Fate,Middle,Twisted Fate,45.6375,Bad Early Game,49.95
+MiddleAkali,Middle,Akali,45.73333333,Bad Early Game,46.98333333
+SupportSona,Support,Sona,45.8,Bad Early Game,55.52692308
+ADCSenna,ADC,Senna,46.00555556,Bad Early Game,52.48888889
+TopSion,Top,Sion,46.04090909,Bad Early Game,49.69090909
+TopGangplank,Top,Gangplank,46.07428571,Bad Early Game,42.76857143
+ADCKai'Sa,ADC,Kai'Sa,46.10555556,Bad Early Game,49.02777778
+MiddleLissandra,Middle,Lissandra,46.14814815,Bad Early Game,50.15555556
+JungleWarwick,Jungle,Warwick,46.16190476,Bad Early Game,50.62380952
+SupportNami,Support,Nami,46.16923077,Bad Early Game,51.25384615
+SupportGalio,Support,Galio,46.38888889,Bad Early Game,51.81111111
+SupportNautilus,Support,Nautilus,46.40740741,Bad Early Game,49.84444444
+SupportLulu,Support,Lulu,46.42592593,Bad Early Game,49.8
+MiddleMalzahar,Middle,Malzahar,46.78965517,Bad Early Game,51.79655172
+JungleTaliyah,Jungle,Taliyah,46.8,Bad Early Game,36.95
+TopGwen,Top,Gwen,46.884,Bad Early Game,44.968
+SupportBlitzcrank,Support,Blitzcrank,46.91034483,Bad Early Game,49.84137931
+ADCAshe,ADC,Ashe,46.91052632,Bad Early Game,52.85789474
+ADCEzreal,ADC,Ezreal,47.05238095,Bad Early Game,49.25238095
+MiddleOrianna,Middle,Orianna,47.05714286,Bad Early Game,48.69642857
+ADCTwitch,ADC,Twitch,47.07368421,Bad Early Game,48.28947368
+TopCamille,Top,Camille,47.62941176,Bad Early Game,51.97941176
+ADCAphelios,ADC,Aphelios,47.805,Bad Early Game,48.51
+JungleGwen,Jungle,Gwen,47.83333333,Bad Early Game,51
+MiddleQiyana,Middle,Qiyana,47.89090909,Bad Early Game,48.12424242
+MiddleFizz,Middle,Fizz,48.21538462,Bad Early Game,48.25384615
+JungleJarvan_IV,Jungle,Jarvan IV,48.30344828,Bad Early Game,51.77931034
+TopUrgot,Top,Urgot,48.35,Bad Early Game,50.45
+MiddleKassadin,Middle,Kassadin,48.365625,Bad Early Game,49.8
+MiddleSylas,Middle,Sylas,48.37941176,Bad Early Game,49.18529412
+JungleJax,Jungle,Jax,48.4,Bad Early Game,50
+JungleLee_Sin,Jungle,Lee Sin,48.403125,Bad Early Game,48.39375
+SupportSeraphine,Support,Seraphine,48.43913043,Bad Early Game,50.1826087
+JungleXin_Zhao,Jungle,Xin Zhao,48.74642857,Bad Early Game,52.84285714
+MiddleAhri,Middle,Ahri,48.85,Bad Early Game,49.94166667
+MiddleYone,Middle,Yone,49.28571429,Bad Early Game,51.04
+JungleFiddlesticks,Jungle,Fiddlesticks,49.34333333,Bad Early Game,51.9
+MiddleLeBlanc,Middle,LeBlanc,49.39714286,Bad Early Game,49.23714286
+ADCZiggs,ADC,Ziggs,49.62631579,Bad Early Game,50.87894737
+MiddleDiana,Middle,Diana,49.64210526,Bad Early Game,50.03157895
+MiddleViktor,Middle,Viktor,49.91034483,Bad Early Game,53.30344828
+TopYorick,Top,Yorick,49.98666667,Bad Early Game,48.86666667
+ADCSamira,ADC,Samira,50.07,Good Early Game,48.92
+TopJax,Top,Jax,50.13235294,Good Early Game,51.46470588
+JungleViego,Jungle,Viego,50.2037037,Good Early Game,45.23703704
+JungleShaco,Jungle,Shaco,50.23103448,Good Early Game,51.31034483
+SupportShaco,Support,Shaco,50.23333333,Good Early Game,51.66666667
+SupportYuumi,Support,Yuumi,50.36666667,Good Early Game,50.21851852
+TopWukong,Top,Wukong,50.43846154,Good Early Game,52.19615385
+MiddleSyndra,Middle,Syndra,50.57941176,Good Early Game,47.07352941
+TopTeemo,Top,Teemo,50.63939394,Good Early Game,50.63333333
+SupportTrundle,Support,Trundle,50.69090909,Good Early Game,49.7
+TopKled,Top,Kled,50.71428571,Good Early Game,50.34285714
+ADCTristana,ADC,Tristana,50.78421053,Good Early Game,51.06842105
+TopVolibear,Top,Volibear,50.79375,Good Early Game,51.7375
+SupportKarma,Support,Karma,50.81481481,Good Early Game,46.51481481
+SupportMorgana,Support,Morgana,51.09259259,Good Early Game,48.62962963
+MiddleTalon,Middle,Talon,51.31481481,Good Early Game,53.10740741
+MiddleCassiopeia,Middle,Cassiopeia,51.68636364,Good Early Game,51.23181818
+MiddleLucian,Middle,Lucian,51.7625,Good Early Game,49.0375
+ADCSivir,ADC,Sivir,51.83333333,Good Early Game,49.80555556
+JungleKindred,Jungle,Kindred,51.89583333,Good Early Game,47.57916667
+JungleLillia,Jungle,Lillia,51.91764706,Good Early Game,49.02941176
+ADCJhin,ADC,Jhin,51.91904762,Good Early Game,51.71904762
+TopRiven,Top,Riven,52.12647059,Good Early Game,51.22352941
+TopGaren,Top,Garen,52.14666667,Good Early Game,50.62
+JungleEkko,Jungle,Ekko,52.16333333,Good Early Game,49.98666667
+MiddleEkko,Middle,Ekko,52.24444444,Good Early Game,51.46666667
+JungleNidalee,Jungle,Nidalee,52.30769231,Good Early Game,45.45769231
+JungleEvelynn,Jungle,Evelynn,52.36666667,Good Early Game,48.63333333
+ADCMiss_Fortune,ADC,Miss Fortune,52.37777778,Good Early Game,50.31111111
+JungleKayn,Jungle,Kayn,52.57666667,Good Early Game,51.31333333
+TopSett,Top,Sett,52.93714286,Good Early Game,50.40857143
+ADCVarus,ADC,Varus,53.05263158,Good Early Game,48.09473684
+JungleKha'Zix,Jungle,Kha'Zix,53.37586207,Good Early Game,52.16551724
+TopDarius,Top,Darius,53.60294118,Good Early Game,50.72941176
+ADCCaitlyn,ADC,Caitlyn,53.67368421,Good Early Game,49.82631579
+MiddleRyze,Middle,Ryze,53.7,Good Early Game,43.5875
+TopDr._Mundo,Top,Dr. Mundo,53.80740741,Good Early Game,50.8
+JungleRek'Sai,Jungle,Rek'Sai,53.87142857,Good Early Game,50.24285714
+MiddleAnivia,Middle,Anivia,54.04827586,Good Early Game,50.72068966
+SupportSett,Support,Sett,54.35,Good Early Game,46.53
+SupportSwain,Support,Swain,54.715,Good Early Game,48.37
+ADCXayah,ADC,Xayah,54.87,Good Early Game,47.275
+MiddleVladimir,Middle,Vladimir,54.915625,Good Early Game,51.965625
+TopFiora,Top,Fiora,55,Good Early Game,51.26176471
+MiddleAkshan,Middle,Akshan,55.12352941,Good Early Game,52.79705882
+SupportBard,Support,Bard,55.24166667,Good Early Game,53.18333333
+JungleDiana,Jungle,Diana,55.31923077,Good Early Game,46.16923077
+MiddleGraves,Middle,Graves,55.53333333,Good Early Game,50.04583333
+SupportLux,Support,Lux,55.60384615,Good Early Game,49.73846154
+SupportBrand,Support,Brand,55.67307692,Good Early Game,48.09615385
+TopGnar,Top,Gnar,55.84333333,Good Early Game,48.65666667
+TopIrelia,Top,Irelia,56.15833333,Good Early Game,50.83888889
+TopRenekton,Top,Renekton,56.19677419,Good Early Game,46.32580645
+ADCLucian,ADC,Lucian,56.28421053,Good Early Game,48.05263158
+MiddleYasuo,Middle,Yasuo,56.77714286,Good Early Game,51.81142857
+SupportZilean,Support,Zilean,56.90416667,Good Early Game,50.85416667
+TopAatrox,Top,Aatrox,56.9125,Good Early Game,51.30625
+JungleGraves,Jungle,Graves,57.08928571,Good Early Game,48.975
+SupportPantheon,Support,Pantheon,57.13076923,Good Early Game,46.42307692
+SupportZyra,Support,Zyra,57.35769231,Good Early Game,52.18461538
+JungleNocturne,Jungle,Nocturne,57.44230769,Good Early Game,51.36538462
+JungleRumble,Jungle,Rumble,57.5,Good Early Game,42.5
+JungleUdyr,Jungle,Udyr,58.18333333,Good Early Game,47.41666667
+TopTryndamere,Top,Tryndamere,58.49642857,Good Early Game,48.675
+JungleMaster_Yi,Jungle,Master Yi,58.54137931,Good Early Game,50.22758621
+JungleHecarim,Jungle,Hecarim,58.7125,Good Early Game,49.14583333
+MiddleZed,Middle,Zed,59.06764706,Good Early Game,49.67941176
+ADCDraven,ADC,Draven,59.07,Good Early Game,52.355
+MiddleIrelia,Middle,Irelia,59.25757576,Good Early Game,49.16666667
+JungleShyvana,Jungle,Shyvana,59.51764706,Good Early Game,51.93529412
+JungleKarthus,Jungle,Karthus,59.64705882,Good Early Game,48.44117647
+JungleRengar,Jungle,Rengar,60.05217391,Very Good Early Game,49.05217391
+TopMordekaiser,Top,Mordekaiser,60.20882353,Very Good Early Game,50.97058824
+JungleOlaf,Jungle,Olaf,60.32666667,Very Good Early Game,46.42666667
+ADCYasuo,ADC,Yasuo,60.41111111,Very Good Early Game,51.33333333
+SupportVel'Koz,Support,Vel'Koz,60.56,Very Good Early Game,46.94
+SupportSenna,Support,Senna,60.73703704,Very Good Early Game,48.19259259
+TopIllaoi,Top,Illaoi,60.76923077,Very Good Early Game,49.63076923
+SupportPyke,Support,Pyke,60.95,Very Good Early Game,49.00384615
+TopTahm_Kench,Top,Tahm Kench,61.10540541,Very Good Early Game,50.36756757
+SupportAshe,Support,Ashe,61.15,Very Good Early Game,50.4
+SupportXerath,Support,Xerath,65.576,Very Good Early Game,50.048
+SupportVeigar,Support,Veigar,67.6,Very Good Early Game,52.9
+TopSinged,Top,Singed,42.52105263,Bad Early Game,51.21052632
