@@ -9,7 +9,7 @@ JungleElise,Jungle,Elise,36.86470588,Danger Early Game,48.15294118
 SupportAlistar,Support,Alistar,37.4,Danger Early Game,48.92857143
 TopYone,Top,Yone,37.84666667,Danger Early Game,50.55333333
 SupportTaric,Support,Taric,38.2875,Danger Early Game,48.4375
-JungleNunu_&_Willump,Jungle,Nunu & Willump,38.83333333,Danger Early Game,51.68333333
+JungleNunu,Jungle,Nunu,38.83333333,Danger Early Game,51.68333333
 MiddleGalio,Middle,Galio,39.24,Danger Early Game,48.09
 JungleSejuani,Jungle,Sejuani,39.32142857,Danger Early Game,45.42142857
 TopMalphite,Top,Malphite,39.68888889,Danger Early Game,50.77037037
@@ -163,3 +163,4 @@ SupportAshe,Support,Ashe,61.15,Very Good Early Game,50.4
 SupportXerath,Support,Xerath,65.576,Very Good Early Game,50.048
 SupportVeigar,Support,Veigar,67.6,Very Good Early Game,52.9
 TopSinged,Top,Singed,42.52105263,Bad Early Game,51.21052632
+MiddleAzir,Middle,Azir,50.0,Good Early Game,50.0
