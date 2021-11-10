@@ -101,17 +101,12 @@ Top_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
 
 bonus_for_lane_Top = 2
 
-final_score_Top = ((Top_early_game_win_rate - 50)/4) + \
-                Top_power_spike_delta + \
-                (2 if Top_ally_champion_color == "Red" else 0) + \
-                (2 if Top_enemy_champion_color == "Red" else 0)  + \
-                (-1 if Top_ally_champion_color == "Yellow" else 0)  + \
-                (1 if Top_enemy_champion_color == "Yellow" else 0)  + \
-                (1 if Top_enemy_squishy == "Squishy" else 0)  + \
+final_score_Top = ((Top_early_game_win_rate - 50)/10) + \
                 (0.5*Top_ally_mobility + 1.0*Top_enemy_mobility) + \
-                (4*Top_melee_vs_melee) + \
+                (2*Top_melee_vs_melee) + \
                 (1 if Top_ally_cc == "Low CC" else 2 if Top_ally_cc == "Medium CC" else 3 if Top_ally_cc == "High CC" else 0) + \
-                (-1*(1 if Top_enemy_cc == "Low CC" else 2 if Top_enemy_cc == "Medium CC" else 3 if Top_enemy_cc == "High CC" else 0))
+                (-0.3*(1 if Top_enemy_cc == "Low CC" else 2 if Top_enemy_cc == "Medium CC" else 3 if Top_enemy_cc == "High CC" else 0)) + \
+                1
 
 final_score_Top
 
@@ -190,20 +185,13 @@ Jungle_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
 bonus_for_lane_Jungle = 1
 
 
-final_score_Jungle = ((Jungle_early_game_win_rate - 50)/4) + \
-                Jungle_power_spike_delta + \
-                (2 if Jungle_ally_champion_color == "Red" else 0) + \
-                (2 if Jungle_enemy_champion_color == "Red" else 0)  + \
-                (-1 if Jungle_ally_champion_color == "Yellow" else 0)  + \
-                (1 if Jungle_enemy_champion_color == "Yellow" else 0)  + \
-                (1 if Jungle_enemy_squishy == "Squishy" else 0)  + \
+final_score_Jungle = ((Jungle_early_game_win_rate - 50)/10) + \
                 (0.5*Jungle_ally_mobility + 1.0*Jungle_enemy_mobility) + \
-                (4*Jungle_melee_vs_melee) + \
+                (2*Jungle_melee_vs_melee) + \
                 (1 if Jungle_ally_cc == "Low CC" else 2 if Jungle_ally_cc == "Medium CC" else 3 if Jungle_ally_cc == "High CC" else 0) + \
-                (-1*(1 if Jungle_enemy_cc == "Low CC" else 2 if Jungle_enemy_cc == "Medium CC" else 3 if Jungle_enemy_cc == "High CC" else 0))
-
+                (-0.3*(1 if Jungle_enemy_cc == "Low CC" else 2 if Jungle_enemy_cc == "Medium CC" else 3 if Jungle_enemy_cc == "High CC" else 0)) + \
+                0
 final_score_Jungle
-
 
 
 st.header("Middle")
@@ -278,18 +266,12 @@ Middle_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
 
 bonus_for_lane_Middle = 0 # short lane
 
-final_score_Middle = ((Middle_early_game_win_rate - 50)/4) + \
-                Middle_power_spike_delta + \
-                (2 if Middle_ally_champion_color == "Red" else 0) + \
-                (2 if Middle_enemy_champion_color == "Red" else 0)  + \
-                (-1 if Middle_ally_champion_color == "Yellow" else 0)  + \
-                (1 if Middle_enemy_champion_color == "Yellow" else 0)  + \
-                (1 if Middle_enemy_squishy == "Squishy" else 0)  + \
+final_score_Middle = ((Middle_early_game_win_rate - 50)/10) + \
                 (0.5*Middle_ally_mobility + 1.0*Middle_enemy_mobility) + \
-                (4*Middle_melee_vs_melee) + \
+                (2*Middle_melee_vs_melee) + \
                 (1 if Middle_ally_cc == "Low CC" else 2 if Middle_ally_cc == "Medium CC" else 3 if Middle_ally_cc == "High CC" else 0) + \
-                (-1*(1 if Middle_enemy_cc == "Low CC" else 2 if Middle_enemy_cc == "Medium CC" else 3 if Middle_enemy_cc == "High CC" else 0))
-
+                (-0.3*(1 if Middle_enemy_cc == "Low CC" else 2 if Middle_enemy_cc == "Medium CC" else 3 if Middle_enemy_cc == "High CC" else 0)) + \
+                0
 final_score_Middle
 
 
@@ -366,18 +348,12 @@ ADC_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
 
 bonus_for_lane_ADC = 1
 
-final_score_ADC = ((ADC_early_game_win_rate - 50)/4) + \
-                ADC_power_spike_delta + \
-                (2 if ADC_ally_champion_color == "Red" else 0) + \
-                (2 if ADC_enemy_champion_color == "Red" else 0)  + \
-                (-1 if ADC_ally_champion_color == "Yellow" else 0)  + \
-                (1 if ADC_enemy_champion_color == "Yellow" else 0)  + \
-                (1 if ADC_enemy_squishy == "Squishy" else 0)  + \
+final_score_ADC = ((ADC_early_game_win_rate - 50)/10) + \
                 (0.5*ADC_ally_mobility + 1.0*ADC_enemy_mobility) + \
-                (4*ADC_melee_vs_melee) + \
+                (2*ADC_melee_vs_melee) + \
                 (1 if ADC_ally_cc == "Low CC" else 2 if ADC_ally_cc == "Medium CC" else 3 if ADC_ally_cc == "High CC" else 0) + \
-                (-1*(1 if ADC_enemy_cc == "Low CC" else 2 if ADC_enemy_cc == "Medium CC" else 3 if ADC_enemy_cc == "High CC" else 0))
-
+                (-0.3*(1 if ADC_enemy_cc == "Low CC" else 2 if ADC_enemy_cc == "Medium CC" else 3 if ADC_enemy_cc == "High CC" else 0)) + \
+                1
 final_score_ADC
 
 
@@ -453,18 +429,12 @@ Support_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
 
 bonus_for_lane_Support = 1 # I like support and ADC separate, double reward potential, keep it consistent too.
 
-final_score_Support = ((Support_early_game_win_rate - 50)/4) + \
-                Support_power_spike_delta + \
-                (2 if Support_ally_champion_color == "Red" else 0) + \
-                (2 if Support_enemy_champion_color == "Red" else 0)  + \
-                (-1 if Support_ally_champion_color == "Yellow" else 0)  + \
-                (1 if Support_enemy_champion_color == "Yellow" else 0)  + \
-                (1 if Support_enemy_squishy == "Squishy" else 0)  + \
+final_score_Support = ((Support_early_game_win_rate - 50)/10) + \
                 (0.5*Support_ally_mobility + 1.0*Support_enemy_mobility) + \
-                (4*Support_melee_vs_melee) + \
+                (2*Support_melee_vs_melee) + \
                 (1 if Support_ally_cc == "Low CC" else 2 if Support_ally_cc == "Medium CC" else 3 if Support_ally_cc == "High CC" else 0) + \
-                (-1*(1 if Support_enemy_cc == "Low CC" else 2 if Support_enemy_cc == "Medium CC" else 3 if Support_enemy_cc == "High CC" else 0))
-
+                (-0.3*(1 if Support_enemy_cc == "Low CC" else 2 if Support_enemy_cc == "Medium CC" else 3 if Support_enemy_cc == "High CC" else 0)) + \
+                1
 final_score_Support
 
 st.header("Check enemy jungle path")
@@ -476,3 +446,5 @@ Jungle_early_game_win_rate
 Middle_early_game_win_rate
 ADC_early_game_win_rate
 Support_early_game_win_rate
+
+st.markdown("Note: I didn't consider likelihood of being a pusher")
