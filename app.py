@@ -34,10 +34,10 @@ st.header("Top")
 temp = win_rates.loc[win_rates['role'] == "Top"]
 temp = temp.loc[temp['champion_id'] == inputs['Ally Top']]
 temp = temp.loc[temp['enemy_champion_id'] == inputs['Enemy Top']]
-Top_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
-Top_early_game_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Top_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Top_early_game_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
 
-if Top_win_rate == 0:
+if Top_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Top"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Top']]
     first_top_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
@@ -45,7 +45,7 @@ if Top_win_rate == 0:
     temp = temp.loc[temp['champion_id'] == inputs['Enemy Top']]
     second_top_early_game_win_rate = 50 if temp.shape[0] == 0 else 100 - temp['win_rate'].iloc[0]
     Top_win_rate = (first_top_early_game_win_rate + second_top_early_game_win_rate) / 2
-if Top_early_game_win_rate == 0:
+if Top_early_game_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Top"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Top']]
     first_top_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
@@ -95,12 +95,11 @@ Top_melee_vs_melee = 1 if Top_ally_melee == 'Melee' and Top_enemy_melee == 'Mele
 
 temp = cc.loc[cc['Champion'] == inputs['Ally Top']]
 Top_ally_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Top_ally_cc
+
 temp = cc.loc[cc['Champion'] == inputs['Enemy Top']]
 Top_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Top_enemy_cc
+
 bonus_for_lane_Top = 2
-bonus_for_lane_Top
 
 final_score_Top = ((Top_early_game_win_rate - 50)/4) + \
                 Top_power_spike_delta + \
@@ -113,7 +112,7 @@ final_score_Top = ((Top_early_game_win_rate - 50)/4) + \
                 (4*Top_melee_vs_melee) + \
                 (1 if Top_ally_cc == "Low CC" else 2 if Top_ally_cc == "Medium CC" else 3 if Top_ally_cc == "High CC" else 0) + \
                 (-1*(1 if Top_enemy_cc == "Low CC" else 2 if Top_enemy_cc == "Medium CC" else 3 if Top_enemy_cc == "High CC" else 0))
-st.header("Score")
+
 final_score_Top
 
 
@@ -123,10 +122,10 @@ st.header("Jungle")
 temp = win_rates.loc[win_rates['role'] == "Jungle"]
 temp = temp.loc[temp['champion_id'] == inputs['Ally Jungle']]
 temp = temp.loc[temp['enemy_champion_id'] == inputs['Enemy Jungle']]
-Jungle_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
-Jungle_early_game_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Jungle_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Jungle_early_game_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
 
-if Jungle_win_rate == 0:
+if Jungle_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Jungle"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Jungle']]
     first_Jungle_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
@@ -134,7 +133,7 @@ if Jungle_win_rate == 0:
     temp = temp.loc[temp['champion_id'] == inputs['Enemy Jungle']]
     second_Jungle_early_game_win_rate = 50 if temp.shape[0] == 0 else 100 - temp['win_rate'].iloc[0]
     Jungle_win_rate = (first_Jungle_early_game_win_rate + second_Jungle_early_game_win_rate) / 2
-if Jungle_early_game_win_rate == 0:
+if Jungle_early_game_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Jungle"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Jungle']]
     first_Jungle_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
@@ -184,12 +183,12 @@ Jungle_melee_vs_melee = 1 if Jungle_ally_melee == 'Melee' and Jungle_enemy_melee
 
 temp = cc.loc[cc['Champion'] == inputs['Ally Jungle']]
 Jungle_ally_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Jungle_ally_cc
+
 temp = cc.loc[cc['Champion'] == inputs['Enemy Jungle']]
 Jungle_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Jungle_enemy_cc
-bonus_for_lane_Jungle = 2
-bonus_for_lane_Jungle
+
+bonus_for_lane_Jungle = 1
+
 
 final_score_Jungle = ((Jungle_early_game_win_rate - 50)/4) + \
                 Jungle_power_spike_delta + \
@@ -202,7 +201,7 @@ final_score_Jungle = ((Jungle_early_game_win_rate - 50)/4) + \
                 (4*Jungle_melee_vs_melee) + \
                 (1 if Jungle_ally_cc == "Low CC" else 2 if Jungle_ally_cc == "Medium CC" else 3 if Jungle_ally_cc == "High CC" else 0) + \
                 (-1*(1 if Jungle_enemy_cc == "Low CC" else 2 if Jungle_enemy_cc == "Medium CC" else 3 if Jungle_enemy_cc == "High CC" else 0))
-st.header("Score")
+
 final_score_Jungle
 
 
@@ -212,10 +211,10 @@ st.header("Middle")
 temp = win_rates.loc[win_rates['role'] == "Middle"]
 temp = temp.loc[temp['champion_id'] == inputs['Ally Middle']]
 temp = temp.loc[temp['enemy_champion_id'] == inputs['Enemy Middle']]
-Middle_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
-Middle_early_game_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Middle_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Middle_early_game_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
 
-if Middle_win_rate == 0:
+if Middle_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Middle"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Middle']]
     first_Middle_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
@@ -223,7 +222,7 @@ if Middle_win_rate == 0:
     temp = temp.loc[temp['champion_id'] == inputs['Enemy Middle']]
     second_Middle_early_game_win_rate = 50 if temp.shape[0] == 0 else 100 - temp['win_rate'].iloc[0]
     Middle_win_rate = (first_Middle_early_game_win_rate + second_Middle_early_game_win_rate) / 2
-if Middle_early_game_win_rate == 0:
+if Middle_early_game_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Middle"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Middle']]
     first_Middle_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
@@ -273,12 +272,11 @@ Middle_melee_vs_melee = 1 if Middle_ally_melee == 'Melee' and Middle_enemy_melee
 
 temp = cc.loc[cc['Champion'] == inputs['Ally Middle']]
 Middle_ally_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Middle_ally_cc
+
 temp = cc.loc[cc['Champion'] == inputs['Enemy Middle']]
 Middle_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Middle_enemy_cc
-bonus_for_lane_Middle = 2
-bonus_for_lane_Middle
+
+bonus_for_lane_Middle = 0 # short lane
 
 final_score_Middle = ((Middle_early_game_win_rate - 50)/4) + \
                 Middle_power_spike_delta + \
@@ -291,7 +289,7 @@ final_score_Middle = ((Middle_early_game_win_rate - 50)/4) + \
                 (4*Middle_melee_vs_melee) + \
                 (1 if Middle_ally_cc == "Low CC" else 2 if Middle_ally_cc == "Medium CC" else 3 if Middle_ally_cc == "High CC" else 0) + \
                 (-1*(1 if Middle_enemy_cc == "Low CC" else 2 if Middle_enemy_cc == "Medium CC" else 3 if Middle_enemy_cc == "High CC" else 0))
-st.header("Score")
+
 final_score_Middle
 
 
@@ -301,10 +299,10 @@ st.header("ADC")
 temp = win_rates.loc[win_rates['role'] == "ADC"]
 temp = temp.loc[temp['champion_id'] == inputs['Ally ADC']]
 temp = temp.loc[temp['enemy_champion_id'] == inputs['Enemy ADC']]
-ADC_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
-ADC_early_game_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+ADC_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+ADC_early_game_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
 
-if ADC_win_rate == 0:
+if ADC_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "ADC"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally ADC']]
     first_ADC_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
@@ -312,7 +310,7 @@ if ADC_win_rate == 0:
     temp = temp.loc[temp['champion_id'] == inputs['Enemy ADC']]
     second_ADC_early_game_win_rate = 50 if temp.shape[0] == 0 else 100 - temp['win_rate'].iloc[0]
     ADC_win_rate = (first_ADC_early_game_win_rate + second_ADC_early_game_win_rate) / 2
-if ADC_early_game_win_rate == 0:
+if ADC_early_game_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "ADC"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally ADC']]
     first_ADC_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
@@ -362,12 +360,11 @@ ADC_melee_vs_melee = 1 if ADC_ally_melee == 'Melee' and ADC_enemy_melee == 'Mele
 
 temp = cc.loc[cc['Champion'] == inputs['Ally ADC']]
 ADC_ally_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-ADC_ally_cc
+
 temp = cc.loc[cc['Champion'] == inputs['Enemy ADC']]
 ADC_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-ADC_enemy_cc
-bonus_for_lane_ADC = 2
-bonus_for_lane_ADC
+
+bonus_for_lane_ADC = 1
 
 final_score_ADC = ((ADC_early_game_win_rate - 50)/4) + \
                 ADC_power_spike_delta + \
@@ -380,7 +377,7 @@ final_score_ADC = ((ADC_early_game_win_rate - 50)/4) + \
                 (4*ADC_melee_vs_melee) + \
                 (1 if ADC_ally_cc == "Low CC" else 2 if ADC_ally_cc == "Medium CC" else 3 if ADC_ally_cc == "High CC" else 0) + \
                 (-1*(1 if ADC_enemy_cc == "Low CC" else 2 if ADC_enemy_cc == "Medium CC" else 3 if ADC_enemy_cc == "High CC" else 0))
-st.header("Score")
+
 final_score_ADC
 
 
@@ -390,10 +387,10 @@ st.header("Support")
 temp = win_rates.loc[win_rates['role'] == "Support"]
 temp = temp.loc[temp['champion_id'] == inputs['Ally Support']]
 temp = temp.loc[temp['enemy_champion_id'] == inputs['Enemy Support']]
-Support_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
-Support_early_game_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Support_win_rate = None if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
+Support_early_game_win_rate = None if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
 
-if Support_win_rate == 0:
+if Support_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Support"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Support']]
     first_Support_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['win_rate'].iloc[0]
@@ -401,7 +398,7 @@ if Support_win_rate == 0:
     temp = temp.loc[temp['champion_id'] == inputs['Enemy Support']]
     second_Support_early_game_win_rate = 50 if temp.shape[0] == 0 else 100 - temp['win_rate'].iloc[0]
     Support_win_rate = (first_Support_early_game_win_rate + second_Support_early_game_win_rate) / 2
-if Support_early_game_win_rate == 0:
+if Support_early_game_win_rate == None:
     temp = average_win_rates.loc[average_win_rates['role'] == "Support"]
     temp = temp.loc[temp['champion_id'] == inputs['Ally Support']]
     first_Support_early_game_win_rate = 50 if temp.shape[0] == 0 else temp['in_lane'].iloc[0]
@@ -417,7 +414,7 @@ Support_ally_early_power_spike = None if temp.shape[0] == 0 else temp['Early'].i
 
 temp = spikes.loc[spikes['champion'] == inputs['Enemy Support']]
 Support_enemy_early_power_spike = None if temp.shape[0] == 0 else temp['Early'].iloc[0]
-Support_enemy_early_power_spike
+
 Support_power_spike_delta = Support_ally_early_power_spike - Support_enemy_early_power_spike
 
 temp = color.loc[color['champion'] == inputs['Ally Support']]
@@ -440,7 +437,6 @@ Support_ally_mobility = None if temp.shape[0] == 0 else temp['mobility'].iloc[0]
 temp = mobility.loc[mobility['Champion'] == inputs['Enemy Support']]
 Support_enemy_mobility = None if temp.shape[0] == 0 else temp['mobility'].iloc[0]
 
-
 temp = melee.loc[melee['Champion'] == inputs['Ally Support']]
 Support_ally_melee = None if temp.shape[0] == 0 else temp['Type'].iloc[0]
 
@@ -451,12 +447,11 @@ Support_melee_vs_melee = 1 if Support_ally_melee == 'Melee' and Support_enemy_me
 
 temp = cc.loc[cc['Champion'] == inputs['Ally Support']]
 Support_ally_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Support_ally_cc
+
 temp = cc.loc[cc['Champion'] == inputs['Enemy Support']]
 Support_enemy_cc = None if temp.shape[0] == 0 else temp['cc'].iloc[0]
-Support_enemy_cc
-bonus_for_lane_Support = 2
-bonus_for_lane_Support
+
+bonus_for_lane_Support = 1 # I like support and ADC separate, double reward potential, keep it consistent too.
 
 final_score_Support = ((Support_early_game_win_rate - 50)/4) + \
                 Support_power_spike_delta + \
@@ -469,5 +464,15 @@ final_score_Support = ((Support_early_game_win_rate - 50)/4) + \
                 (4*Support_melee_vs_melee) + \
                 (1 if Support_ally_cc == "Low CC" else 2 if Support_ally_cc == "Medium CC" else 3 if Support_ally_cc == "High CC" else 0) + \
                 (-1*(1 if Support_enemy_cc == "Low CC" else 2 if Support_enemy_cc == "Medium CC" else 3 if Support_enemy_cc == "High CC" else 0))
-st.header("Score")
+
 final_score_Support
+
+st.header("Check enemy jungle path")
+f"https://www.jung.gg/champions/{inputs['Enemy Jungle']}/blue"
+
+st.header("Early Strength")
+Top_early_game_win_rate
+Jungle_early_game_win_rate
+Middle_early_game_win_rate
+ADC_early_game_win_rate
+Support_early_game_win_rate
