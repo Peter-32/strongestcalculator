@@ -439,6 +439,7 @@ final_score_Support
 
 st.header("Check enemy jungle path")
 f"https://www.jung.gg/champions/{inputs['Enemy Jungle']}/blue"
+f"https://www.jung.gg/champions/{inputs['Enemy Jungle']}/red"
 
 st.header("Early Strength")
 Top_early_game_win_rate
